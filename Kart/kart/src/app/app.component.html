@@ -1,0 +1,12 @@
+<div class="main"> <!--Main ortalamasını ve dikey olarak da ortalamasını alır..-->
+  <!--Her elemanı post olarak ayrı ayrı alıyoruz.. ngFor foreach gibidir. Diziler içinde elemanları döndürür.-->
+  <!--ngFor içindeki eleman kadar döner ve hepsini kolayca yazdırabilir.-->
+  <app-newcomponent *ngFor="let post of posts" 
+    [title] = "post.title"
+    [imageUrl] = "post.imageUrl"
+    [username] = "post.username"
+    [content] = "post.content"
+  >
+  <!--NOT: AÇILIŞ KAPANIŞ PARANTEZİNE DİKKAT.. ÜST TARAFIN Sağ taraf data kısmı sol taraf değişken ismi..--> -->
+  </app-newcomponent>
+</div>
